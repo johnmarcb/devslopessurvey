@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devslopes Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="center">
+      <header>
+        <h1>Devslopes Survey Form</h1>
+        <p><em>Thank you for taking the time to help us improve the platform</em></p>
+      </header>
+      <form action="success.html">
+        <fieldset class="type-container">
+          <label for="name">Name</label>
+          <div class="type-input">
+            <input id="name" type="text" placeholder="Enter your name" maxlength="30" />
+          </div>
+        </fieldset>
+        <fieldset class="type-container">
+          <label for="email">Email</label>
+          <div class="type-input">
+            <input id="email" type="text" placeholder="Enter your Email" />
+          </div>
+        </fieldset>
+        <fieldset class="type-container">
+          <label for="age">Age<span>(optional)</span></label>
+          <div class="type-input">
+            <input id="age" type="number" placeholder="Age" maxlength="2" />
+          </div>
+        </fieldset>
+        <fieldset class="select-container">
+          <label for="role">Which option best describes your current role?</label>
+          <div class="select-option-container">
+            <select name="role" id="role">
+              <optgroup class="role-option">
+                <option value="select-current" selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="radio-container">
+          <div class="radio-inner-container">
+            <legend>Would you recommend Devslopes to a friend?</legend>
+            <input type="radio" name="referral-option" id="definitely" />
+            <label for="definitely">Definitely</label>
+            <input type="radio" name="referral-option" id="maybe" />
+            <label for="maybe">Maybe</label>
+            <input type="radio" name="referral-option" id="not-sure" />
+            <label for="not-sure">Not sure</label>
+          </div>
+        </fieldset>
+        <fieldset class="checkbox-container">
+          <div class="checkbox-inner-container">
+            <legend>
+              What would you like to see improved?<span class="optional"
+                >(Check all that apply)</span
+              >
+            </legend>
+            <input type="checkbox" id="front-end-projects" />
+            <label for="front-end-projects">Front-end Projects</label>
+            <input type="checkbox" id="back-end-projects" />
+            <label for="back-end-projects">Back-end Projects</label>
+            <input type="checkbox" id="challenges" />
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" id="videos" />
+            <label for="videos">Videos</label>
+            <input type="checkbox" id="online-meetups" />
+            <label for="online-meetups">Online Meetups</label>
+            <input type="checkbox" id="community" />
+            <label for="community">Community</label>
+          </div>
+        </fieldset>
+        <fieldset class="textarea-container">
+          <div class="textarea-inner-contaienr">
+            <label for="comments">Any comments or suggestions?</label>
+            <div class="textarea-input-container">
+              <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
